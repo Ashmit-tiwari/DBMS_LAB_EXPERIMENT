@@ -1,0 +1,27 @@
+-- =====================================================================
+-- EXPERIMENT 05: Database Schema Creation
+-- Author: Ashmit Tiwari
+-- Database: MySQL 8.0+
+-- Description: DDL script creating Department and Employee tables
+--              for views, updatability testing, and recursive CTEs.
+-- =====================================================================
+
+DROP TABLE IF EXISTS Employee;
+DROP TABLE IF EXISTS Department;
+
+CREATE TABLE Department (
+    Dept_ID INT PRIMARY KEY,
+    Dept_Name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Employee (
+    Emp_ID INT PRIMARY KEY,
+    Emp_Name VARCHAR(100) NOT NULL,
+    Job_Title VARCHAR(100),
+    Salary DECIMAL(10, 2),
+    Dept_ID INT,
+    FOREIGN KEY (Dept_ID) REFERENCES Department(Dept_ID)
+        ON UPDATE CASCADE
+        ON DELETE RESTRICT
+);
+
