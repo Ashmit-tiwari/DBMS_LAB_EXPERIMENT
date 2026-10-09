@@ -1,11 +1,3 @@
--- =====================================================================
--- EXPERIMENT 05: Database Schema Creation
--- Author: Ashmit Tiwari
--- Database: MySQL 8.0+
--- Description: DDL script creating Department and Employee tables
---              for views, updatability testing, and recursive CTEs.
--- =====================================================================
-
 DROP TABLE IF EXISTS Employee;
 DROP TABLE IF EXISTS Department;
 
@@ -24,4 +16,3 @@ CREATE TABLE Employee (
         ON UPDATE CASCADE
         ON DELETE RESTRICT
 );
-

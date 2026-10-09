@@ -1,6 +1,6 @@
 # Experiment 03: Employee–Department–Project Database Schema and Basic/Aggregate Queries
 
-**Author:** Ashmit Tiwari  
+**Author:** ASHMIT TIWARI  
 **Environment:** MySQL 8.0+ / MySQL Workbench  
 
 ---

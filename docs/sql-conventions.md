@@ -1,6 +1,6 @@
 # SQL Style Guide & Coding Conventions
 
-**Author:** Ashmit Tiwari  
+**Author:** ASHMIT TIWARI  
 **Scope:** DBMS Laboratory Experiments & Portfolio Work  
 
 This document defines the architectural and stylistic standards implemented across all SQL scripts in this repository. Consistent SQL styling improves maintainability, simplifies peer review, and adheres to enterprise engineering practices.
@@ -85,21 +85,11 @@ CREATE TABLE Employee (
 
 ---
 
-## 5. Commenting Standards
+## 5. Commenting & Documentation Standards
 
-- **File Header Comments:** Every script begins with a structured documentation block identifying the experiment, author, target engine, and purpose.
-- **Section Headers:** Major sections and individual tasks must be introduced with standard ANSI single-line comments (`--`).
-- **Inline Explanations:** Non-obvious logic, tricky predicates (e.g., self-join inequality `E1.emp_id < E2.emp_id`), and deliberate error triggers must include explanatory notes.
-
-```sql
--- =====================================================================
--- EXPERIMENT 03: Basic SQL Queries
--- Author: Ashmit Tiwari
--- =====================================================================
-
--- Query 1: Selection - Retrieve employees in Delhi
-SELECT * FROM Employee WHERE city = 'Delhi';
-```
+- **Clean Script Files:** SQL script files are maintained as clean, comment-free executable code blocks to optimize database batch execution and script portability.
+- **External Documentation:** All query explanations, execution orders, expected outputs, and technical rationales are fully documented in the respective experiment `README.md` files rather than embedded directly inside executable scripts.
+- **Header Standards:** Where author attribution is required, scripts are attributed strictly to **ASHMIT TIWARI**.
 
 ---
 

@@ -1,11 +1,3 @@
--- =====================================================================
--- EXPERIMENT 04: Data Insertion
--- Author: Ashmit Tiwari
--- Database: MySQL 8.0+
--- Description: DML script populating Department, Project, and Employee
---              tables for join and subquery analysis.
--- =====================================================================
-
 INSERT INTO Department (dept_id, dept_name) VALUES
 (1, 'HR'),
 (2, 'Finance'),
@@ -54,4 +46,3 @@ INSERT INTO Employee (emp_id, emp_name, dept_id, project_id, salary, city) VALUE
 (28, 'Bhavya', 1, 101, 46000.00, 'Chennai'),
 (29, 'Chetan', 1, 101, 43000.00, 'Lucknow'),
 (30, 'Devika', 5, 107, 58000.00, 'Delhi');
-

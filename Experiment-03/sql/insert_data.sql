@@ -1,12 +1,3 @@
--- =====================================================================
--- EXPERIMENT 03: Data Insertion
--- Author: Ashmit Tiwari
--- Database: MySQL 8.0+
--- Description: DML script populating Department, Project, and Employee
---              tables with seed records while respecting FK integrity.
--- =====================================================================
-
--- 1. Insert Departments (5 Departments)
 INSERT INTO Department (dept_id, dept_name) VALUES
 (1, 'HR'),
 (2, 'Finance'),
@@ -14,7 +5,6 @@ INSERT INTO Department (dept_id, dept_name) VALUES
 (4, 'Marketing'),
 (5, 'Operations');
 
--- 2. Insert Projects (8 Projects)
 INSERT INTO Project (project_id, project_name, dept_id) VALUES
 (101, 'Recruitment System', 1),
 (102, 'Payroll Automation', 2),
@@ -25,7 +15,6 @@ INSERT INTO Project (project_id, project_name, dept_id) VALUES
 (107, 'Logistics Optimization', 5),
 (108, 'Inventory System', 5);
 
--- 3. Insert Employees (30 Employees)
 INSERT INTO Employee (emp_id, emp_name, dept_id, project_id, salary, city) VALUES
 (1, 'Alice', 1, 101, 45000.00, 'Delhi'),
 (2, 'Bob', 1, 101, 42000.00, 'Mumbai'),
@@ -57,4 +46,3 @@ INSERT INTO Employee (emp_id, emp_name, dept_id, project_id, salary, city) VALUE
 (28, 'Bhavya', 1, 101, 46000.00, 'Chennai'),
 (29, 'Chetan', 1, 101, 43000.00, 'Lucknow'),
 (30, 'Devika', 5, 107, 58000.00, 'Delhi');
-

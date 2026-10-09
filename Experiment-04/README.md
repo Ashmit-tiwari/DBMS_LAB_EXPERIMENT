@@ -1,6 +1,6 @@
 # Experiment 04: Advanced Joins, Subqueries, Set Operations, and Execution Plan Analysis
 
-**Author:** Ashmit Tiwari  
+**Author:** ASHMIT TIWARI  
 **Environment:** MySQL 8.0+ / MySQL Workbench  
 
 ---

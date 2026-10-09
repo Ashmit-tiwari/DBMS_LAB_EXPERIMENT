@@ -1,6 +1,6 @@
 # Experiment 05: Database Views, View Updatability, and Recursive Common Table Expressions (CTEs)
 
-**Author:** Ashmit Tiwari  
+**Author:** ASHMIT TIWARI  
 **Environment:** MySQL 8.0+ / MySQL Workbench  
 
 ---

@@ -1,6 +1,6 @@
 # DBMS Lab Experiments
 
-**Author:** Ashmit Tiwari  
+**Author:** ASHMIT TIWARI  
 **Repository Name:** DBMS-Lab-Experiments  
 **Purpose:** Academic DBMS practical work, SQL learning, and database concept demonstration  
 **Database System:** MySQL Community Server 8.0+  
@@ -71,12 +71,10 @@ DBMS-Lab-Experiments/
 │       ├── triggers.sql
 │       └── test_cases.sql
 │
-├── docs/                              # Shared documentation
-│   ├── setup-guide.md                 # Environment setup and execution instructions
-│   ├── sql-conventions.md             # SQL style guide and standards
-│   └── repository-guide.md            # Repository governance and contribution guide
-│
-└── archive/                           # Preserved original course documents (.docx)
+└── docs/                              # Shared documentation
+    ├── setup-guide.md                 # Environment setup and execution instructions
+    ├── sql-conventions.md             # SQL style guide and standards
+    └── repository-guide.md            # Repository governance and contribution guide
 ```
 
 ---
@@ -138,6 +136,6 @@ Read the complete [SQL Style Guide](docs/sql-conventions.md) for further details
 
 ## Author Information
 
-- **Author:** Ashmit Tiwari
+- **Author:** ASHMIT TIWARI
 - **Repository:** DBMS-Lab-Experiments
 - **Purpose:** Academic DBMS practical evaluations and developer portfolio showcase

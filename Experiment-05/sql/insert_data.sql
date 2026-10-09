@@ -1,12 +1,3 @@
--- =====================================================================
--- EXPERIMENT 05: Data Insertion
--- Author: Ashmit Tiwari
--- Database: MySQL 8.0+
--- Description: DML script inserting 5 departments and 30 employees
---              with job titles and baseline salary values.
--- =====================================================================
-
--- 1. Insert Departments (5 Departments)
 INSERT INTO Department (Dept_ID, Dept_Name) VALUES
 (1, 'Engineering'),
 (2, 'Sales'),
@@ -14,7 +5,6 @@ INSERT INTO Department (Dept_ID, Dept_Name) VALUES
 (4, 'Finance'),
 (5, 'Operations');
 
--- 2. Insert Employees (30 Employees)
 INSERT INTO Employee (Emp_ID, Emp_Name, Job_Title, Salary, Dept_ID) VALUES
 (1, 'Ava Patel', 'Developer', 60000.00, 1),
 (2, 'Liam Chen', 'Developer', 62000.00, 1),
@@ -46,4 +36,3 @@ INSERT INTO Employee (Emp_ID, Emp_Name, Job_Title, Salary, Dept_ID) VALUES
 (28, 'Wyatt Baker', 'Operations Specialist', 57000.00, 5),
 (29, 'Lily Adams', 'Coordinator', 52000.00, 5),
 (30, 'Gabriel Nelson', 'Coordinator', 54000.00, 5);
-

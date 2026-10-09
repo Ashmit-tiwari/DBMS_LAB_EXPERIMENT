@@ -1,6 +1,6 @@
 # Experiment 06: Stored Procedures with Error Handling and Triggers for Audit Logging
 
-**Author:** Ashmit Tiwari  
+**Author:** ASHMIT TIWARI  
 **Environment:** MySQL 8.0+ / MySQL Workbench  
 
 ---

@@ -1,6 +1,6 @@
 # Database Setup and Execution Guide
 
-**Author:** Ashmit Tiwari  
+**Author:** ASHMIT TIWARI  
 **Target Environment:** MySQL Server 8.0+ / MySQL Workbench 8.0 CE  
 
 This guide provides instructions for setting up the local MySQL environment, configuring the command-line interface, executing laboratory experiment scripts in correct sequence, and troubleshooting common database engine issues.

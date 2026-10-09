@@ -1,6 +1,6 @@
 # Repository Structure & Maintenance Guide
 
-**Author:** Ashmit Tiwari  
+**Author:** ASHMIT TIWARI  
 **Scope:** Repository Governance & Extension Guidelines  
 
 This document outlines the directory structure of the repository, explains the organization of experiment files, and provides step-by-step instructions for extending the project with additional experiments.
@@ -52,12 +52,10 @@ DBMS-Lab-Experiments/
 │       ├── triggers.sql
 │       └── test_cases.sql
 │
-├── docs/                              # Shared documentation
-│   ├── setup-guide.md                 # Database setup and execution instructions
-│   ├── sql-conventions.md             # Code style guide and formatting rules
-│   └── repository-guide.md            # Maintenance and contribution guidelines
-│
-└── archive/                           # Preserved original course documents (.docx)
+└── docs/                              # Shared documentation
+    ├── setup-guide.md                 # Database setup and execution instructions
+    ├── sql-conventions.md             # Code style guide and formatting rules
+    └── repository-guide.md            # Maintenance and contribution guidelines
 ```
 
 ---
@@ -89,7 +87,7 @@ Inside `Experiment-07/sql/`, create modular scripts adhering to [docs/sql-conven
 ### Step 3: Author the Experiment README
 Create `Experiment-07/README.md` following the standardized structure:
 1. Experiment number and descriptive title
-2. Author: Ashmit Tiwari
+2. Author: ASHMIT TIWARI
 3. Original aim and academic problem statement
 4. Concepts demonstrated
 5. Database prerequisites

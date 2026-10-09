@@ -1,15 +1,6 @@
--- =====================================================================
--- EXPERIMENT 06: Database Triggers (Validation and Audit Logging)
--- Author: Ashmit Tiwari
--- Database: MySQL 8.0+
--- Description: Defines BEFORE UPDATE trigger to prevent negative salaries
---              and AFTER UPDATE trigger to maintain Salary_Audit trail.
--- =====================================================================
-
 DROP TRIGGER IF EXISTS before_employee_salary_update;
 DROP TRIGGER IF EXISTS after_employee_salary_update;
 
--- 1. Validation Trigger: Prevent negative salary updates
 DELIMITER $$
 
 CREATE TRIGGER before_employee_salary_update
@@ -24,8 +15,6 @@ END $$
 
 DELIMITER ;
 
-
--- 2. Audit Logging Trigger: Record salary change events
 DELIMITER $$
 
 CREATE TRIGGER after_employee_salary_update
@@ -47,4 +36,3 @@ BEGIN
 END $$
 
 DELIMITER ;
-

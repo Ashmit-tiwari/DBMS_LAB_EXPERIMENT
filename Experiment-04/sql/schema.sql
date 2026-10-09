@@ -1,11 +1,3 @@
--- =====================================================================
--- EXPERIMENT 04: Database Schema Creation
--- Author: Ashmit Tiwari
--- Database: MySQL 8.0+
--- Description: DDL script creating Department, Project, and Employee
---              tables for join and subquery analysis.
--- =====================================================================
-
 DROP TABLE IF EXISTS Employee;
 DROP TABLE IF EXISTS Project;
 DROP TABLE IF EXISTS Department;
@@ -38,4 +30,3 @@ CREATE TABLE Employee (
         ON UPDATE CASCADE
         ON DELETE RESTRICT
 );
-
