@@ -52,6 +52,32 @@ DBMS-Lab-Experiments/
 │       ├── triggers.sql
 │       └── test_cases.sql
 │
+├── Experiment-07/                     # Experiment 07 folder
+│   ├── README.md
+│   └── sql/
+│       ├── unf_to_1nf.sql
+│       ├── schema_normalized.sql
+│       ├── insert_data.sql
+│       └── verify_lossless_join.sql
+│
+├── Experiment-09/                     # Experiment 09 folder
+│   ├── README.md
+│   └── sql/
+│       ├── schema.sql
+│       ├── insert_data.sql
+│       ├── queries_before_indexing.sql
+│       ├── create_indexes.sql
+│       └── queries_after_indexing.sql
+│
+├── Experiment-10/                     # Experiment 10 folder
+│   ├── README.md
+│   └── sql/
+│       ├── schema.sql
+│       ├── insert_data.sql
+│       ├── slow_queries_explain.sql
+│       ├── create_indexes.sql
+│       └── optimized_queries.sql
+│
 └── docs/                              # Shared documentation
     ├── setup-guide.md                 # Database setup and execution instructions
     ├── sql-conventions.md             # Code style guide and formatting rules
@@ -63,29 +89,29 @@ DBMS-Lab-Experiments/
 ## 2. Organization Principles
 
 1. **Separation of Concerns:** Each experiment is an isolated module containing its own dedicated Markdown documentation (`README.md`) and a `sql/` directory.
-2. **Modular SQL Scripts:** SQL scripts are decomposed by lifecycle phase (`schema.sql`, `insert_data.sql`) and query purpose (`joins.sql`, `subqueries.sql`, etc.) rather than monolithic multi-hundred-line dumps.
+2. **Modular SQL Scripts:** SQL scripts are decomposed by lifecycle phase (`schema.sql`, `insert_data.sql`) and query purpose (`create_indexes.sql`, `optimized_queries.sql`, etc.) rather than monolithic multi-hundred-line dumps.
 3. **No-Images Policy:** The repository relies exclusively on lightweight text-based documentation, markdown tables, and inline code formatting. No image assets, screenshots, or graphics are admitted.
 4. **Independent Reproducibility:** Each experiment directory contains sufficient DDL and DML scripts to run self-contained without cross-folder file dependencies.
 
 ---
 
-## 3. How to Add a New Experiment (e.g., Experiment-07)
+## 3. How to Add a New Experiment (e.g., Experiment-11)
 
 When expanding the repository with subsequent laboratory work, follow these standardized steps:
 
 ### Step 1: Create the Directory Tree
 ```bash
-mkdir -p Experiment-07/sql
+mkdir -p Experiment-11/sql
 ```
 
 ### Step 2: Implement SQL Scripts
-Inside `Experiment-07/sql/`, create modular scripts adhering to [docs/sql-conventions.md](file:///e:/dbms%20files/docs/sql-conventions.md):
+Inside `Experiment-11/sql/`, create modular scripts adhering to [docs/sql-conventions.md](sql-conventions.md):
 - `schema.sql`: Table definitions and integrity constraints.
 - `insert_data.sql`: Seed dataset.
-- Feature-specific query files (e.g. `transactions.sql`, `indexing.sql`, etc.).
+- Feature-specific query files.
 
 ### Step 3: Author the Experiment README
-Create `Experiment-07/README.md` following the standardized structure:
+Create `Experiment-11/README.md` following the standardized structure:
 1. Experiment number and descriptive title
 2. Author: ASHMIT TIWARI
 3. Original aim and academic problem statement
@@ -98,7 +124,6 @@ Create `Experiment-07/README.md` following the standardized structure:
 10. Learning outcomes
 
 ### Step 4: Update Root Documentation
-1. Edit the root [README.md](file:///e:/dbms%20files/README.md) to add an entry in the **Repository Contents** table.
-2. Include relative links pointing directly to `Experiment-07/README.md`.
+1. Edit the root [README.md](../README.md) to add an entry in the **Repository Contents** table.
+2. Include relative links pointing directly to `Experiment-11/README.md`.
 3. Update the folder structure diagram to reflect the new directory.
-
